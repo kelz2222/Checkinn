@@ -1,0 +1,78 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --navy: #0A1628;
+  --gold: #C9A84C;
+  --gold-light: #E8C96A;
+  --ivory: #F8F4ED;
+  --slate: #4A5568;
+  --green: #2D7A4F;
+  --red: #C0392B;
+  --white: #ffffff;
+  --radius: 10px;
+  --shadow: 0 4px 24px rgba(10,22,40,0.10);
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: var(--ivory);
+  color: var(--navy);
+  min-height: 100vh;
+}
+
+h1, h2, h3 {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 700;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  font-family: 'Inter', sans-serif;
+}
+
+input, select, textarea {
+  font-family: 'Inter', sans-serif;
+  outline: none;
+}
+
+a { text-decoration: none; color: inherit; }
+
+.btn-primary {
+  background: var(--gold);
+  color: var(--navy);
+  padding: 12px 28px;
+  border-radius: var(--radius);
+  font-weight: 600;
+  font-size: 15px;
+  transition: background 0.2s;
+}
+.btn-primary:hover { background: var(--gold-light); }
+
+.btn-outline {
+  background: transparent;
+  border: 2px solid var(--gold);
+  color: var(--gold);
+  padding: 10px 24px;
+  border-radius: var(--radius);
+  font-weight: 600;
+  font-size: 15px;
+  transition: all 0.2s;
+}
+.btn-outline:hover { background: var(--gold); color: var(--navy); }
+
+.card {
+  background: var(--white);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 24px;
+}
+
+.badge-vacant { background: #d4edda; color: #155724; padding: 4px 12px; border-radius: 20px; font-size: 12px; font-weight: 600; }
+.badge-occupied { background: #f8d7da; color: #721c24; padding: 4px 12px; border-radius: 20px; font-size: 12px; font-weight: 600; }
+.badge-reserved { background: #fff3cd; color: #856404; padding: 4px 12px; border-radius: 20px; font-size: 12px; font-weight: 600; }
+.badge-maintenance { background: #e2e3e5; color: #383d41; padding: 4px 12px; border-radius: 20px; font-size: 12px; font-weight: 600; }
+.badge-pending { background: #fff3cd; color: #856404; padding: 4px 12px; border-radius: 20px; font-size: 12px; font-weight: 600; }
+.badge-confirmed { background: #cce5ff; color: #004085; padding: 4px 12px; border-radius: 20px; font-size: 12px; font-weight: 600; }
+.badge-checked_in { background: #d4edda; color: #155724; padding: 4px 12px; border-radius: 20px; font-size: 12px; font-weight: 600; }
+.badge-checked_out { background: #e2e3e5; color: #383d41; padding: 4px 12px; border-radius: 20px; font-size: 12px; font-weight: 600; }
